@@ -18,6 +18,8 @@ class Scoreboard(Turtle):
         self.write(self.l_score, align="center", font=("Courier", 80, "normal"))
         self.goto(100, 200)
         self.write(self.r_score, align="center", font=("Courier", 80, "normal"))
+        self.goto(250,250)
+        self.write(f"Keys: \nLeft Paddle: W and S\nRight Paddle: Up and Down")
 
     def game_finished(self, win_point):
         if self.l_score == win_point or self.r_score == win_point:
