@@ -1,4 +1,4 @@
-from turtle import Screen
+from turtle import Screen, Turtle
 from paddle import Paddle
 from ball import Ball
 from scoreboard import Scoreboard
@@ -15,6 +15,18 @@ l_paddle = Paddle((-350, 0))
 ball = Ball()
 scoreboard = Scoreboard()
 
+# Creating middle dashed line
+middle_line = Turtle()
+middle_line.color("white")
+middle_line.penup()
+middle_line.hideturtle()
+middle_line.goto(0, 300)
+middle_line.setheading(270)
+while middle_line.ycor() > -300:
+    middle_line.pendown()
+    middle_line.forward(75/2)
+    middle_line.penup()
+    middle_line.forward(25/2)
 
 def go_up():
     new_y = l_paddle.ycor() + 20
