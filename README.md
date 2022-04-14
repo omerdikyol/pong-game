@@ -1,3 +1,3 @@
 # pong-game
 Classic Ping Pong Game with Scoreboard using Python/Turtle
-![image](https://user-images.githubusercontent.com/41495154/163371679-3521c19b-25b8-485a-bfe2-cbcda1604821.png)
+![image](https://user-images.githubusercontent.com/41495154/163374357-76f1eaf9-0c04-4156-a468-29766759b466.png)
